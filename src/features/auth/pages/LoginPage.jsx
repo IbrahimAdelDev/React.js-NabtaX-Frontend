@@ -15,7 +15,7 @@ export default function LoginPage() {
     const token = localStorage.getItem('token');
     console.error("LoginPage token:", token);
     if (token) {
-      navigate('/gardens');
+      // navigate('/gardens');
     }
   }, [navigate]);
 
@@ -37,7 +37,7 @@ export default function LoginPage() {
 
   return (
     <>
-      <div className="flex items-center justify-center h-screen bg-gray-50">
+      <div className="flex flex-col items-center justify-center h-screen bg-gray-50">
         <form onSubmit={handleSubmit} className="bg-white p-6 rounded-xl shadow-md w-80">
           <h2 className="text-xl font-bold mb-4 text-center">Login</h2>
           <input
@@ -59,7 +59,7 @@ export default function LoginPage() {
           <button className="w-full bg-green-800 text-white py-2 rounded">Login</button>
           {error && <p className="text-red-500 text-sm mt-2 text-center">{error}</p>}
         </form>
-        <Link to="/register" className="text-sm text-blue-500 underline">Sign up</Link>
+        <Link to="/signin" className="text-sm text-blue-500 underline">Sign up</Link>
       </div>
     </>
   )

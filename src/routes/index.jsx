@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LoginPage from '../features/auth/pages/loginPage';
-import SigninPage from '../features/auth/pages/signinPage';
+import LoginPage from '../features/auth/pages/LoginPage';
+import SigninPage from '../features/auth/pages/SigninPage';
 import MyGardens from "../features/gardens/pages/MyGardens";
 import AddGardenPage from "../features/gardens/pages/AddGarden";
 import GardenDetails from "../features/gardens/pages/GardenDetails";
